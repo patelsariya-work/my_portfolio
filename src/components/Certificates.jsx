@@ -1,66 +1,56 @@
 import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
 
 const Certificates = () => {
   const certificates = [
     {
-      id: "CERT-DEL-25",
-      title: "Data Visualization & Dashboards",
-      issuer: "Deloitte",
-      file: "/certificates/Deloitte.pdf"
+      title: "Artificial Intelligence Internship",
+      issuer: "SMARTED Innovations (Skill India)",
+      file: "#", // Replace with actual path if you have the file
+      id: "CERT-SMR-2026"
     },
     {
-      id: "CERT-PFI-25",
-      title: "Pharmaceutical Quality Systems",
-      issuer: "Pfizer",
-      file: "/certificates/Pfizer.pdf"
+      title: "Structural Analysis in Bioinformatics",
+      issuer: "IIT Kharagpur",
+      file: "#", // Replace with actual path if you have the file
+      id: "CERT-IIT-2024"
     },
     {
-      id: "CERT-SMR-25",
-      title: "Artificial Intelligence in Healthcare",
-      issuer: "SMARTED Innovations",
-      file: "/certificates/ARTIFICIAL_INTELLIGENCE-SariyaPatel.pdf"
+      title: "Techniques in Pharmaceutical Microbiology",
+      issuer: "BioEduXperts",
+      file: "#", // Replace with actual path if you have the file
+      id: "CERT-BIO-2024"
     }
   ];
 
   return (
-    <section id="certificates" className="section">
-      <div className="container">
+    <section id="certificates" style={{ background: 'var(--bg-secondary)' }}>
+      <div className="container editorial-grid">
         
-        <div className="tech-grid mb-8">
-          <div className="col-4">
-            <h2 className="section-title">credentials</h2>
-          </div>
-          <div className="col-8 flex items-end">
-             <div className="data-text text-muted mb-4 text-right w-full">GMP/GxP COMPLIANT VALIDATION</div>
-          </div>
+        <div>
+          <h2 className="section-title">Credentials</h2>
+          <span className="tag green mb-4">Verified Certifications</span>
         </div>
-
-        <div className="tech-grid">
-          {certificates.map((cert) => (
-            <div key={cert.id} className="col-12 tech-block">
-              <div className="flex flex-col md:flex-row justify-between items-center" style={{ flexDirection: 'row' }}>
-                
-                <div style={{ width: '20%' }}>
-                  <span className="data-text">{cert.id}</span>
-                </div>
-                
-                <div style={{ width: '40%' }}>
-                  <h3 style={{ fontSize: '1.25rem' }}>{cert.title}</h3>
-                </div>
-
-                <div style={{ width: '20%' }}>
-                  <span className="text-muted">{cert.issuer}</span>
-                </div>
-
-                <div style={{ width: '20%', textAlign: 'right' }}>
-                  <a href={cert.file} target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>Verify Document</a>
-                </div>
-
+        
+        <div className="flex flex-col">
+          {certificates.map((cert, index) => (
+            <div key={index} className="list-item flex flex-col md:flex-row justify-between items-center gap-6">
+              
+              <div>
+                <span className="data-text block mb-2" style={{ color: 'var(--accent-green)' }}>ID / {cert.id}</span>
+                <h3 className="text-3xl font-light mb-2">{cert.title}</h3>
+                <h4 className="text-lg text-secondary">Issued by {cert.issuer}</h4>
               </div>
+              
+              <div>
+                <a href={cert.file} target="_blank" rel="noreferrer" className="btn text-lg">
+                  View Document <ArrowUpRight size={16} />
+                </a>
+              </div>
+              
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

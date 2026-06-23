@@ -1,50 +1,38 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section" style={{ background: 'var(--text-primary)', color: 'var(--bg-primary)' }}>
-      <div className="container">
+    <section id="contact" style={{ borderBottom: 'none' }}>
+      <div className="container" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto', padding: '6rem 0' }}>
         
-        <div className="tech-grid">
-          <div className="col-8">
-            <h2 style={{ 
-              fontSize: 'clamp(3rem, 6vw, 5rem)', 
-              fontWeight: 500, 
-              letterSpacing: '-0.05em',
-              lineHeight: 1,
-              marginBottom: '2rem',
-              color: 'var(--bg-primary)'
-            }}>
-              Initiate <br/>
-              Connection
-            </h2>
-            
-            <p style={{ 
-              fontSize: '1.25rem', 
-              color: 'var(--text-tertiary)',
-              maxWidth: '500px',
-              marginBottom: '3rem'
-            }}>
-              Currently open to roles in Bioinformatics, Healthcare Data Analytics, and Pharmaceutical QA/QC.
-            </p>
-            
-            <a href="mailto:contact@example.com" className="btn" style={{ 
-              background: 'var(--bg-primary)', 
-              color: 'var(--text-primary)',
-              border: 'none',
-              padding: '1.25rem 2.5rem'
-            }}>
-              contact@example.com
-            </a>
-          </div>
+        <h2 className="text-4xl md:text-6xl font-light mb-8" style={{ color: 'var(--text-primary)', letterSpacing: '-0.04em' }}>
+          Initiate Collaboration.
+        </h2>
+        
+        <p className="text-xl text-secondary mb-12" style={{ lineHeight: '1.8' }}>
+          Open to roles in Bioinformatics, Healthcare Data Analytics, and Pharmaceutical QA/QC. Ready to decode the next complex dataset.
+        </p>
+        
+        <a href="mailto:patelsariya25@gmail.com" style={{ 
+          display: 'inline-flex', 
+          alignItems: 'center', 
+          gap: '1rem', 
+          fontSize: '1.25rem', 
+          color: 'var(--text-primary)', 
+          textDecoration: 'none', 
+          borderBottom: '2px solid var(--accent-indigo)',
+          paddingBottom: '0.5rem',
+          transition: 'opacity 0.2s ease'
+        }}>
+          patelsariya25@gmail.com <ArrowRight size={20} color="var(--accent-indigo)" />
+        </a>
 
-          <div className="col-4 flex flex-col justify-end">
-            <div className="data-text" style={{ color: 'var(--text-tertiary)', borderTop: '1px solid #333', paddingTop: '1.5rem' }}>
-              <div>&gt; STATUS: ACTIVELY SEEKING</div>
-              <div>&gt; CLEARANCE: PORTFOLIO_V3</div>
-              <div style={{ marginTop: '2rem' }}>&copy; 2026 Sariya Patel</div>
-            </div>
-          </div>
+        <div className="mt-24 pt-10" style={{ borderTop: '1px solid var(--border-color)' }}>
+          <p className="data-text text-secondary">
+            &gt; STATUS: ACTIVELY SEEKING OPPORTUNITIES <br/>
+            &copy; 2026 Sariya Patel.
+          </p>
         </div>
 
       </div>

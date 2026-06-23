@@ -3,64 +3,62 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
     {
-      year: "2025",
       role: "Internship in Healthcare & AI",
       company: "SMARTED Innovations",
+      period: "2025",
+      type: "work",
       description: "Trained and evaluated AI models on healthcare datasets, increasing predictive accuracy to 94% across 5 epochs. Developed secure ETL pipelines for clinical data processing."
     },
     {
-      year: "2024 - 26",
       role: "M.Sc. in Microbiology",
       company: "Bharati Vidyapeeth (Deemed to be University), Pune",
+      period: "2024 - 2026",
+      type: "education",
       description: "Specialized in Molecular Biology, Microbial Genetics, and GMP/GLP compliance. Conducted extensive research on probiotic isolation."
     },
     {
-      year: "2025 - 26",
       role: "Advanced Diploma in Bioinformatics",
-      company: "Rajiv Gandhi Institute of IT and Biotechnology (RGITBT)",
-      description: "Mastered sequence alignment (BLAST), phylogenetics, QIIME2 microbiome analysis, and bioinformatics pipeline development."
+      company: "Rajiv Gandhi Institute of IT and Biotechnology (RGITBT), Pune",
+      period: "2025 - 2026",
+      type: "education",
+      description: "Mastered sequence alignment (BLAST), phylogenetics, QIIME2 microbiome analysis, and bioinformatics pipeline development (Python/Biopython)."
     },
     {
-      year: "2021 - 24",
       role: "B.Sc. in Microbiology",
       company: "Savitribai Phule Pune University",
+      period: "2021 - 2024",
+      type: "education",
       description: "Foundation in microbial culture, immunology, and biochemistry."
     }
   ];
 
   return (
-    <section id="experience" className="section" style={{ background: 'var(--bg-secondary)' }}>
-      <div className="container">
+    <section id="experience">
+      <div className="container editorial-grid">
         
-        <div className="tech-grid mb-8">
-          <div className="col-4">
-            <h2 className="section-title">timeline</h2>
-          </div>
+        <div>
+          <h2 className="section-title">Timeline</h2>
         </div>
-
-        <div className="tech-grid">
+        
+        <div className="flex flex-col">
           {experiences.map((exp, index) => (
-            <div key={index} className="col-12 tech-block">
-              <div className="flex flex-col md:flex-row justify-between items-start" style={{ flexDirection: 'row' }}>
+            <div key={index} className="list-item flex flex-col md:flex-row gap-6 md:gap-12 items-start justify-between">
                 
-                <div style={{ width: '15%' }}>
-                  <span className="data-text">{exp.year}</span>
+                <div style={{ flex: '1', minWidth: '250px' }}>
+                  <span className="data-text text-muted block mb-2">{exp.period}</span>
+                  <h3 className="text-2xl font-light mb-1">{exp.role}</h3>
+                  <h4 className="text-lg text-secondary">{exp.company}</h4>
                 </div>
                 
-                <div style={{ width: '40%' }}>
-                  <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{exp.role}</h3>
-                  <div className="data-text text-muted mb-4">{exp.company}</div>
+                <div style={{ flex: '2' }}>
+                  <p className="text-secondary" style={{ fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '600px' }}>
+                    {exp.description}
+                  </p>
                 </div>
-
-                <div style={{ width: '45%' }}>
-                  <p className="text-muted">{exp.description}</p>
-                </div>
-
-              </div>
+                
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
