@@ -28,13 +28,13 @@ const Contact = () => {
               Currently open to roles in Bioinformatics, Healthcare Data Analytics, and Pharmaceutical QA/QC.
             </p>
             
-            <a href="mailto:contact@example.com" className="btn" style={{ 
+            <a href="mailto:patelsariya25@gmail.com" className="btn" style={{ 
               background: 'var(--bg-primary)', 
               color: 'var(--text-primary)',
               border: 'none',
               padding: '1.25rem 2.5rem'
             }}>
-              contact@example.com
+              patelsariya25@gmail.com
             </a>
           </div>
 

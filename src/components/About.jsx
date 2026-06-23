@@ -25,13 +25,13 @@ const About = () => {
                   With hands-on experience in microbiology research, healthcare analytics, and pharmaceutical quality systems, I develop robust bioinformatics pipelines (Nextflow, QIIME2), ETL workflows, and advanced data visualizations that adhere rigorously to GMP, GLP, and GxP standards.
                 </p>
                 <div className="flex gap-4">
-                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>
+                  <a href="https://www.linkedin.com/in/sariya-patel-776333223" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>
                     LinkedIn
                   </a>
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>
+                  <a href="https://github.com/patelsariya-work" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>
                     GitHub
                   </a>
-                  <a href="mailto:contact@example.com" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>
+                  <a href="mailto:patelsariya25@gmail.com" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>
                     Email
                   </a>
                 </div>

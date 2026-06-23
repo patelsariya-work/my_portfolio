@@ -3,22 +3,22 @@ import React from 'react';
 const Certificates = () => {
   const certificates = [
     {
-      id: "CERT-DEL-25",
-      title: "Data Visualization & Dashboards",
-      issuer: "Deloitte",
-      file: "/certificates/Deloitte.pdf"
+      id: "CERT-SMR-26",
+      title: "Artificial Intelligence Internship",
+      issuer: "SMARTED Innovations (Skill India)",
+      file: "#"
     },
     {
-      id: "CERT-PFI-25",
-      title: "Pharmaceutical Quality Systems",
-      issuer: "Pfizer",
-      file: "/certificates/Pfizer.pdf"
+      id: "CERT-IIT-24",
+      title: "Structural Analysis in Bioinformatics",
+      issuer: "IIT Kharagpur",
+      file: "#"
     },
     {
-      id: "CERT-SMR-25",
-      title: "Artificial Intelligence in Healthcare",
-      issuer: "SMARTED Innovations",
-      file: "/certificates/ARTIFICIAL_INTELLIGENCE-SariyaPatel.pdf"
+      id: "CERT-BIO-24",
+      title: "Techniques in Pharmaceutical Microbiology",
+      issuer: "BioEduXperts",
+      file: "#"
     }
   ];
 
